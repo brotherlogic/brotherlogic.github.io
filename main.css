@@ -1,0 +1,12 @@
+body {font-family:Lato; background:url('bookers.jpg') no-repeat center center fixed; text-colour:white; background-size:cover}
+a {text-decoration: none; color:white}
+h1 {text-align: center; text-transform: uppercase}
+h2 {text-align: center}
+div.hr {
+       background: #fff  no-repeat scroll center;
+       margin-left:35%;
+       margin-right:35%;
+       width:30%;
+       height:2px;
+}
+	
