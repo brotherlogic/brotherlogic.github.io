@@ -1,0 +1,21 @@
+---
+layout: list
+title: Beers
+---
+<script>
+window.onload = function() {
+  var wall = new Masonry( document.getElementById('container'), {
+    columnWidth: 240
+  });
+};
+</script>
+
+<div id="container"
+
+     {% for post in site.posts %}
+     <div class="item">
+       <h3>{{post.title}}</h3>
+     </div>
+     {% endfor %}
+
+</div>
