@@ -1,6 +1,15 @@
 ---
 layout: default
+root: "../../../"
 ---
 <h3>{{page.title}}</h3>
 <h4>{{page.style}}</h4>
+<div class="cover">
+  <img src="{{page.root}}img/{{page.cover}}" width=80% />
+</div>
 {{content}}
+<div class="link">
+  <a href="http://untappd.com/beer/{{page.untappdid}}">
+    <img src="{{page.root}}/untappd.jpg"/>
+  </a>
+</div>
