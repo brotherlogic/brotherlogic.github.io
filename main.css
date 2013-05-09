@@ -3,19 +3,33 @@ a {text-decoration: none; color:white}
 h1 {text-align: center; text-transform: uppercase}
 h2 {text-align: center}
 h3 {text-decoration: underline; margin:0px}
-h4 {margin-top:0px; margin-bottom:5px}
+h4 {
+   position:absolute;
+   top:100px;
+   width:100%;
+   text-align:right;
+}
 ul {margin:0px}
 p {margin-top:10px; margin-bottom:5px}
 div.homeicon {
-	     margin-left:-20%;
+	     position: absolute;
+	     left:20px;
+	     top:20px;
 	     float:left;
 }
 
 div.cover {
 	  margin-top:30px;
-	     margin-left:-20%;
-	     float:left;
+	  margin-left:-20%;
+	  float:left;
 }
+
+div.beer {
+	  margin-top:220px;
+	  margin-left:-20%;
+	  float:left;
+}
+
 
 
 div.hr {
@@ -28,7 +42,25 @@ div.hr {
 	
 .item {
       border: 2px solid;
-  width: 220px;
-  margin: 10px;
-  float: left;
+        width: 260px;
+	height: 260px;
+  	margin: 10px;
+  	float: left;
+}
+
+h4 span{
+   color: white;
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding:10px;      
+   line-height:+39px;
+}
+
+.image {
+       position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h4 span.spacer {
+   padding:0 5px;
 }

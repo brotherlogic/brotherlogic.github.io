@@ -5,17 +5,20 @@ title: Beers
 <script>
 window.onload = function() {
   var wall = new Masonry( document.getElementById('container'), {
-    columnWidth: 240
+    columnWidth: 0
   });
 };
 </script>
 
-<div id="container"
-
+<div id="container">
      {% for post in site.posts %}
      <div class="item">
-       <h3>{{post.title}}</h3>
+       <div class="image">
+	 {% if post.beer %}
+	   <img src='img/{{post.beer}}' height=260 width=260 />
+	   {% endif %}
+	 <a href="./{{post.url}}"><h4><span>{{post.title}}:<br />{{post.style}}</span></h4></a>
+       </div>
      </div>
      {% endfor %}
-
 </div>

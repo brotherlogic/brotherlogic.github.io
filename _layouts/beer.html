@@ -5,7 +5,14 @@ root: "../../../"
 <h3>{{page.title}}</h3>
 <h4>{{page.style}}</h4>
 <div class="cover">
-  <img src="{{page.root}}img/{{page.cover}}" width=80% />
+  {% if page.cover %}
+  <img src="{{page.root}}img/{{page.cover}}" width=180px />
+  {% endif %}
+</div>
+<div class="beer">
+  {% if page.beer %}
+  <img src="{{page.root}}img/{{page.beer}}" width=180px />
+  {% endif %}
 </div>
 {{content}}
 <div class="link">
