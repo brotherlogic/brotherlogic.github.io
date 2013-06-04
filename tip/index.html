@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <form id="target" action="index.html">
+      Cost of meal: <input id="cost" type="text" /><br />
+      Tip Rate: <input id="rate" type="text" value="20"/><br />
+      Suggested Tip: <input id="tip" type"text" /><br />
+      Total Cost: <input id="fullcost" type="text" /><br />
+      <input type="submit" />
+    </form>
+  </body>
+    <script>
+
+ 
+      function isPrime3(n) {
+      if (isNaN(n) || !isFinite(n) || n%1 || n<2) return false; 
+						  if (n%2==0) return (n==2);
+						  if (n%3==0) return (n==3);
+						  var m=Math.sqrt(n);
+						  for (var i=5;i<=m;i+=6) {
+									  if (n%i==0)     return false;
+									  if (n%(i+2)==0) return false;
+									  }
+									  return true;
+									  }
+
+      function getPrime(tip,cost)
+      {
+         while(true) {
+           if (isPrime3(tip)) {									 
+             return tip;
+           } else if (isPrime3(tip+cost)) {
+             return tip;
+           }
+
+           tip++;
+        }
+      }
+
+      function find_prime(){
+         tip_amount = parseFloat($('#cost').val());
+         tip_rate = parseFloat($('#rate').val());
+         tip_value = tip_rate*tip_amount;
+         val = getPrime(Math.round(tip_value),Math.round(tip_amount*100));
+         return val/100.0;
+      }
+
+
+      $('#target').submit(function() {
+         tip = find_prime();
+         perc = tip / parseFloat($('#cost').val())*100;									  
+         $('#tip').val(tip + " (" + perc.toFixed(2) + ")");
+         $('#fullcost').val((tip+parseFloat($('#cost').val())).toFixed(2));
+         return false;
+      });
+    </script>
+</html>
