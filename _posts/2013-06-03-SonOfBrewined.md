@@ -1,9 +1,9 @@
 ---
 layout: beer
-title: Unknown
+title: Son of Brewined
 style: Irish Red
 ---
-* 12L Brewlength
+* 4L Brewlength
 * 1\.033 OG
 * 1\.012 FG
 
