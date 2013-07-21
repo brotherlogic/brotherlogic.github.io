@@ -1,12 +1,12 @@
 ---
 layout: beer
-title: Son Of Brewined
+title: Son of Brewined
 style: Irish Red
 untappdid: 409132
 beer: sonofbrewined-beer.jpg
 cover: sonofbrewined-cover.jpg
 ---
-* 12L Brewlength
+* 4L Brewlength
 * 1\.033 OG
 * 1\.012 FG
 
