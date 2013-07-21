@@ -1,10 +1,11 @@
 ---
 layout: beer
-title: Unknown
+title: Witch Hunt
 style: IPA
 ---
 * 4L Brewlength
 * 1\.070 OG
+* 1\.012 FG
 
 Malts:
 * 80% Light DME
