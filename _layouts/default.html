@@ -1,13 +1,15 @@
 <html>
-  <head>
-    <title> {% if page.title %} {{page.title}} | {% endif %} Bookers Brewing</title>
-    <link href="http://fonts.googleapis.com/css?family=Arapey:400italic|Quando|Josefin+Slab:400,700,400italic,700italic|Trocchi|Arvo|Lato:400,700,400italic,700italic&amp;subset=latin,latin-ext" media="screen" rel="stylesheet" type="text/css" />
-    <link href="{{page.root}}main.css" media="all" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="homeicon">
-      <a href="{{page.root}}beers.html"><img src="{{page.root}}books_small.jpg" /></a>
-    </div>
-    {{ content }}
-  </body>
+
+<head>
+  <title> {% if page.title %} {{page.title}} | {% endif %} Bookers Brewing</title>
+  <link
+    href="http://fonts.googleapis.com/css?family=Arapey:400italic|Quando|Josefin+Slab:400,700,400italic,700italic|Trocchi|Arvo|Lato:400,700,400italic,700italic&amp;subset=latin,latin-ext"
+    media="screen" rel="stylesheet" type="text/css" />
+  <link href="{{page.root}}main.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  {{ content }}
+</body>
+
 </html>
